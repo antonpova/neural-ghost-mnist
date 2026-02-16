@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050a14;
+    color: #e0e6ed;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-layout {
+    display: flex;
+    height: 100%;
+}
+
+.panel {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-panel {
+    flex: 2;
+    border-right: 1px solid #1f2d40;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    background: #08101f;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+    color: #64ffda;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.author {
+    font-size: 0.6em;
+    color: #8892b0;
+    vertical-align: middle;
+    margin-left: 10px;
+    text-transform: none;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    color: #8892b0;
+    border-bottom: 1px solid #1f2d40;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Инструкции */
+.instruction-block {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    line-height: 1.4;
+}
+.instruction-block p {
+    margin: 2px 0;
+}
+.key-hint { font-weight: bold; }
+.sub-hint { font-size: 0.8rem; color: #64748b; font-style: italic; }
+
+#scatterPlotContainer {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}
+
+#scatterPlot { width: 100%; height: 100%; }
+
+.box {
+    background: #0b1624;
+    border: 1px solid #1f2d40;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#digitCanvas {
+    width: 140px;
+    height: 140px;
+    background: #000;
+    border: 1px solid #64ffda;
+    image-rendering: pixelated;
+}
+
+.coords-display {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #00ffcc;
+    margin-top: 5px;
+}
+
+.morph-strip {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 35px;
+}
+.morph-strip canvas {
+    width: 28px;
+    height: 28px;
+    image-rendering: pixelated;
+    border: 1px solid #333;
+}
+
+.status-text {
+    font-family: monospace;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    min-height: 1.2em;
+}
+
+/* GIF Controls */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+input[type="number"] {
+    width: 50px;
+    background: #050a14;
+    border: 1px solid #1f2d40;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.gif-result-container img {
+    margin-top: 10px;
+    max-width: 120px;
+    border: 2px solid #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #000;
+    background: #64ffda;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.download-link:hover {
+    background: #fff;
+}
