@@ -245,9 +245,17 @@ digits in the latent space over time), see animation.mp4.
 
 https://github.com/user-attachments/assets/ff9ad6d4-836f-4a91-8d7b-1dd7e3123851
 
-![compressed_animation](https://github.com/user-attachments/assets/6b249956-9e60-497d-8b3f-23020940ebc5)
+<div>
+  <video src="./assets/animation.mp4" width="100%" autoplay loop muted playsinline>
+    Your browser does not support the video tag.
+  </video>
+  <p>
+    <i>If the video doesn't work for some reason, the GIF will^^</i>
+  </p>
+  <img src="./assets/compressed_animation.gif" width="5in" />
+</div>
 
-[if video doesnt work for some reason, gif will]
+
 
 Visual Insight: After epoch ~30, the points were not settling.
     Instead, they were oscillating wildly back and forth around their
